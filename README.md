@@ -2,9 +2,9 @@
 Selenium BDD test automation framework for UI Automation
 
 Description
-The BDD framework is built using Java programming language integrated with TestNG,Cucumber
-The framework is built using Page Object Model design pattern and implemented using Page Factory class
-The project dependencies are maintained using MAVEN dependency management
+The BDD framework is built using Java programming language integrated with TestNG,Cucumber.
+The framework is built using Page Object Model design pattern and implemented using Page Factory class.
+The project dependencies are maintained using MAVEN dependency management.
 The test scripst are writted using Gherkin syntax.
 The common fields across multiple step definitions are maintained using Dependency Injection pattern.
 
