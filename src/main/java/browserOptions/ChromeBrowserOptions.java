@@ -15,7 +15,7 @@ public class ChromeBrowserOptions {
 	{
 		ChromeOptions  chromeOptions	= new ChromeOptions();
 		//chromeOptions.addArguments("--headless");
-		chromeOptions.addArguments("start-maximized");
+		chromeOptions.addArguments("start-maximized");		
 		return chromeOptions;
 		
 	};

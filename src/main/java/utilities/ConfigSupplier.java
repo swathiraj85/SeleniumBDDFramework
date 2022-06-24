@@ -2,10 +2,12 @@ package utilities;
 
 import java.util.Properties;
 
+//
 // ***************************************************************************************************************************************************
 // the enum is designed based on the principles of Singleton design pattern to get the global variables.
 // the instance is loaded only once and used for the entire execution which is inherently thread safe & serializable 
 // ***************************************************************************************************************************************************
+//
 public enum ConfigSupplier 
 {
 INSTANCE;
@@ -22,18 +24,26 @@ INSTANCE;
         return INSTANCE;
     }
  
-    public String getBaseURI() 
-	{
-    	  String prop = properties.getProperty("baseURI");
-          if(prop != null) return prop;
-          else throw new RuntimeException("property fbaseURI is not specified in the config.properties file");		
-
-	}
-
-	public String getAPIToken() {
-		String prop = properties.getProperty("apiToken");
+    public String getApplicationURL(String application) 
+   	{
+       	  String prop = properties.getProperty(application);
+             if(prop != null) return prop;
+             else throw new RuntimeException("property " + application+ " is not specified in the config.properties file");		
+   	}
+    public String getTimeOut()
+    {	   	  
+ 	   String prop = properties.getProperty("timeout");
         if(prop != null) return prop;
-        else throw new RuntimeException("property apiToken is not specified in the config.properties file");
-
-	}
+        else throw new RuntimeException("The timeout property is not specified in the config.properties file");
+    }
+   public void setCurrentBrowser(String browser_name)
+   {
+	   properties.setProperty("browser", browser_name);
+   }
+   public String getCurrentBrowser()
+   {	   	  
+	   String prop = properties.getProperty("browser");
+       if(prop != null) return prop;
+       else throw new RuntimeException("The browser property is not specified in the config.properties file");
+   }
 }

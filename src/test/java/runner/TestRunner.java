@@ -7,7 +7,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
 		features= {"src/test/resources"},
-		tags= {"@search_google"},
+		tags= {"@guardian_first_news_validinput"},
 		glue= {"stepDefinitions"},
 	    plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","json:target/cucumber-report.json"}
 

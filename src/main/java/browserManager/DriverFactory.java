@@ -8,11 +8,14 @@ import org.testng.Assert;
 
 //***************************************************************************************************************************************************
 // The DriverFactory class is responsible for supplying the test class with an active instance of webdriver class requested.The test class is restricted 
-// to create a driver instance on it own. 
+// to create a driver instance on its own. 
 //
 //****************************************************************************************************************************************************
 public class DriverFactory 
 {
+//
+// declared as static final to access as Class member with out overriding the members
+//
 private static final Map<String,Supplier<DriverManager>> driverMap= new HashMap<String,Supplier<DriverManager>>();
 
 private static final Supplier<DriverManager> edgeSupplier=()->
