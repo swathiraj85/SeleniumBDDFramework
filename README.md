@@ -17,7 +17,7 @@ The common fields across multiple step definitions are maintained using Dependen
 1) src/main/java - the page classes,UI utilities
 2) src/test/java - test runner file,step definitions
 3) src/test/resources - feature files,configuration files
-4) the test results are generated under ExtentReports folder
+4) the test results are generated under folder test-output/SparkReport/dashboard.html
     
 # Usage
  To execute a test script,perform the following steps
