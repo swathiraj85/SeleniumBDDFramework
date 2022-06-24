@@ -7,6 +7,7 @@ The framework is built using Page Object Model design pattern and implemented us
 The project dependencies are maintained using MAVEN dependency management.
 The test scripst are writted using Gherkin syntax.
 The common fields across multiple step definitions are maintained using Dependency Injection pattern.
+The global environment variables are fetched using configuration class and implemented using Singleton design pattern.
 
 # Installation
 1) Install ORACLE JAVA JDK 1.8 version
