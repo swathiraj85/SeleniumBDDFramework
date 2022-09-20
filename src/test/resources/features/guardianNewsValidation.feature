@@ -12,7 +12,7 @@ Feature: Validate the news articles published on https://www.theguardian.com/ton
 
  @guardian_first_news_validinput
   Scenario: Validate the first news article published on https://www.theguardian.com/tone/news against google search results
-     Given I open the "guardian" application on "chrome" browser
+     Given I open the "guardian" application on "edge" browser
      And I accept the cookies on guardian home page
      When I fetch the content of "1st" news article   
      And I close the browser
@@ -72,7 +72,7 @@ Feature: Validate the news articles published on https://www.theguardian.com/ton
      
    @guardian_standard_ui_validation
   Scenario: Validate the standard UI elements of https://www.theguardian.com/tone/news website
-  Given I open the "guardian" application on "chrome" browser  
+  Given I open the "guardian" application on "edge" browser  
      And I accept the cookies on guardian home page   
      Then I verify that "News" tab is displayed
      Then I verify that "Opinion" tab is displayed

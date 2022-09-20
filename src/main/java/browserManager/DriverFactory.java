@@ -40,7 +40,7 @@ public static final DriverManager getManager(String browser)
 	}
 	else
 	{
-		Assert.assertTrue(false, "The browser name is invalid.Please enter either chrome/edge");
+	//	Assert.assertTrue(false, "The browser name is invalid.Please enter either chrome/edge");
 	}
 	return driver_manager;
 }

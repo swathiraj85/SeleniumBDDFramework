@@ -5,12 +5,12 @@ import java.util.Map;
 
 import org.testng.Assert;
 
-import com.google.GoogleHomePage;
-import com.google.GoogleSearchResultsHomePage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
+import pages.com.google.GoogleHomePage;
+import pages.com.google.GoogleSearchResultsHomePage;
 
 public class GooglePageSteps {
 	BaseStepData baseStepData;

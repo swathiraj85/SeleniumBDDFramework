@@ -1,10 +1,10 @@
 package stepDefinitions;
 
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
-import com.guardian.GuardianNewsPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.com.guardian.GuardianNewsPage;
 
 public class GuardianPageSteps {
 
